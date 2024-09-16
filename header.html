@@ -1,10 +1,62 @@
-<header>
-    <h2>This is my website</h2>
-    <a href="home.php">Home</a>
-    <a href="review.php">Review</a>
-    <a href="login.php">Login</a>
-    <a href="register.php">Register</a>
-    <a href="account.php">Account</a>
-    <hr>
-</header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
 
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="https://kit.fontawesome.com/fdaf41001b.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <div class="header">
+      <!-- Header left section -->
+      <div class="header_left_section">
+        
+        <a class="header_button" href="#home">Home</a></li>
+        <div class="dropdown">
+          <button class="header_button">Menu</button>
+            <div class="dropdown-content">
+              <a href="#">New</a>
+              <a href="#">Popular</a>
+              <a href="#">Best</a>
+            </div>
+        </div>
+        
+        <div class="custom-select">
+          <select>
+            <option value="0">Movie</option>
+            <option value="1">Person</option>
+          </select>
+        </div>
+        
+                 
+      </div>
+
+      <!-- Header middle section -->
+      <div class="header_middle_section">
+
+        <div class="search_bar">
+          <input type="text"  name="search_movie" placeholder="Search" autocomplete="off">
+          <button type="submit" name="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          
+<br>
+        </div>
+        
+      </div>
+
+      <!-- Header left section -->
+      <div class="header_right_section">
+        <a class="header_button" href="#home">Sign In</a></li>
+        <a class="header_button" href="#home">Register</a></li>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

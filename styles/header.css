@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  background-image: linear-gradient(to right, black , rgb(8, 8, 39));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.header_left_section {
+  height: 100%;
+  width: 500px;
+  margin-left: 0px;
+  margin-right: 0px;
+ 
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  
+}
+
+.header_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  width: 100px;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  
+}
+
+.header_button:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown {
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.custom-select{
+  
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.custom-select select{
+  text-align: center;
+  border-radius: 8px;
+  width: 100px;
+  font-size: 18px;
+  background: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+.header_middle_section {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 0px;
+
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 12px;
+   
+}
+
+.search_bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+button .fa-solid {
+  width: 25px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header_right_section {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding-right: 40px;
+}
